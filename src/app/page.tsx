@@ -6,15 +6,22 @@ export default function Home() {
       <nav className="fixed top-0 w-full bg-white border-b z-10">
         <div className="mx-auto max-w-5xl px-6 py-4 flex justify-between">
           <span className="font-semibold">Alex Torres</span>
-          <div className="flex gap-6 text-gray-600">
-            <a href="#about" className="hover:text-black">About</a>
-            <a href="#projects" className="hover:text-black">Projects</a>
+          <div className="flex items-center gap-4">
+            <a href="#hero" className="px-4 py-2 rounded-lg bg-black text-white hover:bg-gray-800 transition">
+              Home
+            </a>
+            <a href="#about" className="px-4 py-2 rounded-lg bg-black text-white hover:bg-gray-800 transition">
+              About
+            </a>
+            <a href="#projects" className="px-4 py-2 rounded-lg bg-black text-white hover:bg-gray-800 transition">
+              Projects
+            </a>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="flex min-h-screen flex-col items-center justify-center text-center px-6 pt-24">
+      <section id="hero" className="flex min-h-screen flex-col items-center justify-center text-center px-6 pt-24">
         <h1 className="text-5xl font-bold tracking-tight">
           Alex Torres
         </h1>
