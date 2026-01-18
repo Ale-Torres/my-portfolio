@@ -1,21 +1,20 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="bg-gray-900 text-white min-h-screen">
 
       {/* Navbar */}
-      <nav className="fixed top-0 w-full bg-white border-b z-10">
-        <div className="mx-auto max-w-5xl px-6 py-4 flex justify-between">
-          <span className="font-semibold">Alex Torres</span>
-          <div className="flex items-center gap-4">
-            <a href="#hero" className="px-4 py-2 rounded-lg bg-black text-white hover:bg-gray-800 transition">
-              Home
-            </a>
-            <a href="#about" className="px-4 py-2 rounded-lg bg-black text-white hover:bg-gray-800 transition">
-              About
-            </a>
-            <a href="#projects" className="px-4 py-2 rounded-lg bg-black text-white hover:bg-gray-800 transition">
-              Projects
-            </a>
+      <nav className="fixed top-0 w-full bg-gray-900 border-b border-gray-700 z-10 shadow-md">
+        <div className="mx-auto max-w-5xl px-6 py-4 flex justify-between items-center">
+          {/* Logo / Name */}
+          <span className="font-semibold text-lg text-white">Alex Torres</span>
+
+          {/* Navbar Links */}
+          <div className="flex items-center gap-8 font-medium">
+            <a href="#hero" className="text-gray-200 hover:text-white transition-colors">Home</a>
+            <a href="#about" className="text-gray-200 hover:text-white transition-colors">About</a>
+            <a href="#projects" className="text-gray-200 hover:text-white transition-colors">Projects</a>
           </div>
         </div>
       </nav>
@@ -27,8 +26,8 @@ export default function Home() {
         </h1>
 
         <p className="mt-6 max-w-xl text-xl text-gray-600">
-          Software Engineer with experience in systems QA, robotics, and
-          full-stack web development.
+          UVic Software Engineering graduate | Passionate about building software, 
+          tackling challenges, and exploring new technologies.
         </p>
 
         <div className="mt-8 flex gap-4">
@@ -58,51 +57,56 @@ export default function Home() {
         </h2>
 
         <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-          I’m a software engineer with a background in quality assurance,
-          robotics systems, and interactive applications. I enjoy building
-          clean, reliable systems and learning new technologies through
-          hands-on projects.
+          Welcome! I’m a UVic Software Engineering graduate passionate
+          about building software that solves problems. I enjoy tackling
+          challenges and keeping up with the latest technologies.
         </p>
 
         <p className="mt-4 text-lg text-gray-700 leading-relaxed">
           This site showcases projects I’ve built using React, Next.js,
           Python, Java, and robotics frameworks.
         </p>
+
+          {/* Image */}
+        <div className="md:flex-1 flex justify-center">
+          <Image
+            src="/images/me.jpg"
+            alt="Alex Torres"
+            width={300}
+            height={400}
+            className="shadow-lg"
+          />
+        </div>
       </section>
 
       {/* Projects Section */}
       <section
         id="projects"
-        className="bg-gray-100 py-24"
+        className="bg-gray-900 py-24"
       >
         <div className="mx-auto max-w-5xl px-6">
-          <h2 className="text-3xl font-bold text-center">
+          <h2 className="text-3xl font-bold text-center text-white">
             Projects
           </h2>
 
-          <div className="mt-12 grid gap-8 md:grid-cols-2">
-            <div className="rounded-lg border border-gray-300 bg-gray-50 p-6">
-              <h3 className="text-xl font-semibold">
-                Portfolio Website
-              </h3>
-              <p className="mt-2 text-gray-600">
-                Personal portfolio built with Next.js and React, deployed on
-                Vercel.
-              </p>
-            </div>
-
-            <div className="rounded-lg border bg-white p-6">
-              <h3 className="text-xl font-semibold">
+          <div className="mt-12 grid gap-8 justify-center">
+            {/* Example Project Card */}
+            <div className="rounded-lg border bg-gray-800 p-6 w-full max-w-md">
+              <h3 className="text-xl font-semibold text-white">
                 Robotics Control System
               </h3>
-              <p className="mt-2 text-gray-600">
+              <p className="mt-2 text-gray-300">
                 ROS-based robotic arm control and simulation using Docker and
                 Unity.
               </p>
             </div>
+
+            {/* Add other projects here */}
           </div>
         </div>
       </section>
+
+
     </main>
   );
 }
