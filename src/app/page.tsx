@@ -64,14 +64,12 @@ export default function Home() {
         id="about"
         className="mx-auto max-w-3xl px-6 py-24"
       >
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-3xl text-center font-bold">
           About Me
         </h2>
 
-        <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-          Welcome! I’m a UVic Software Engineering graduate passionate
-          about building software that solves problems. My shoulder cat 
-          is always ready to program with me. 
+        <p className="mt-6 text-lg text-gray-600 text-center leading-relaxed">
+          My shoulder cat Kaiser is always ready to program with me. 
         </p>
 
         {/* Image */}
