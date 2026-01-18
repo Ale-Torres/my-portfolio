@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 
 export default function Home() {
   return (
@@ -33,7 +35,7 @@ export default function Home() {
         <div className="mt-8 flex gap-4">
           <a
             href="#projects"
-            className="rounded-lg bg-black px-6 py-3 text-white hover:bg-gray-800 transition"
+            className="rounded-lg border border-gray-300 px-6 py-3 hover:bg-gray-100 transition"
           >
             View Projects
           </a>
@@ -43,6 +45,16 @@ export default function Home() {
             className="rounded-lg border border-gray-300 px-6 py-3 hover:bg-gray-100 transition"
           >
             About Me
+          </a>
+        </div>
+
+        {/* Social links */}
+        <div className="mt-6 flex gap-6 text-white text-2xl">
+          <a href="https://github.com/Ale-Torres" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+            <FaGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/alejandrotmartn" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+            <FaLinkedin />
           </a>
         </div>
       </section>
@@ -58,17 +70,12 @@ export default function Home() {
 
         <p className="mt-6 text-lg text-gray-700 leading-relaxed">
           Welcome! I’m a UVic Software Engineering graduate passionate
-          about building software that solves problems. I enjoy tackling
-          challenges and keeping up with the latest technologies.
+          about building software that solves problems. My shoulder cat 
+          is always ready to program with me. 
         </p>
 
-        <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-          This site showcases projects I’ve built using React, Next.js,
-          Python, Java, and robotics frameworks.
-        </p>
-
-          {/* Image */}
-        <div className="md:flex-1 flex justify-center">
+        {/* Image */}
+        <div className="mt-6 md:flex-1 flex justify-center">
           <Image
             src="/images/me.jpg"
             alt="Alex Torres"
@@ -105,7 +112,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      
+      {/* Footer */}
+      <footer className="text-center text-gray-400 py-6 border-t border-gray-700">
+        Built by Alex Torres |{" "}
+        <a href="https://github.com/Ale-Torres" className="hover:text-white">GitHub</a>{" "}
+        |{" "}
+        <a href="https://www.linkedin.com/in/your-linkedin" className="hover:text-white">LinkedIn</a>
+      </footer>
 
     </main>
   );
