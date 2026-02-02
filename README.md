@@ -2,7 +2,7 @@
 
 Live site: https://builtbyalex.vercel.app
 
-This repository contains my personal portfolio website, where I showcase my projects, technical skills, and interests in software engineering and tackling new projects such as working with robotics.
+This repository contains my personal portfolio website, where I showcase my projects, technical skills, and interests in software engineering and exploring new areas such as robotics.
 
 ## Overview
 
