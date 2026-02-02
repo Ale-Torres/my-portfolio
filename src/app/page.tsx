@@ -10,7 +10,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full bg-gray-900 border-b border-gray-700 z-10 shadow-md">
         <div className="mx-auto max-w-5xl px-6 py-4 flex justify-between items-center">
           {/* Logo / Name */}
-          <span className="font-semibold text-lg text-white">Alex Torres</span>
+          <span className="font-semibold text-lg text-white">Alejandro Torres</span>
 
           {/* Navbar Links */}
           <div className="flex items-center gap-8 font-medium">
@@ -24,12 +24,12 @@ export default function Home() {
       {/* Hero Section */}
       <section id="hero" className="flex min-h-screen flex-col items-center justify-center text-center px-6 pt-24">
         <h1 className="text-5xl font-bold tracking-tight">
-          Alex Torres
+          Alejandro Torres
         </h1>
 
         <p className="mt-6 max-w-xl text-xl text-gray-600">
-          UVic Software Engineering graduate | Passionate about building software, 
-          tackling challenges, and exploring new technologies.
+          UVic Software Engineering graduate | Passionate about building software 
+          and exploring new technologies.
         </p>
 
         <div className="mt-8 flex gap-4">
@@ -76,7 +76,7 @@ export default function Home() {
         <div className="mt-6 md:flex-1 flex justify-center">
           <Image
             src="/images/me.jpg"
-            alt="Alex Torres"
+            alt="Alejandro Torres"
             width={300}
             height={400}
             className="shadow-lg"
@@ -101,9 +101,41 @@ export default function Home() {
                 Robotics Control System
               </h3>
               <p className="mt-2 text-gray-300">
-                ROS-based robotic arm control and simulation using Docker and
-                Unity.
+                ROS-based robotic arm control and simulation using my Docker file and C++ scripts. 
+                Controlling with Keyboard, Unity and RVIz.
               </p>
+
+              {/* Images */}
+              <div className="mt-4 grid grid-cols-2 gap-3">
+                <Image
+                  src="/images/meXarm.jpg"
+                  alt="Robotics system 1"
+                  width={300}
+                  height={200}
+                  className="object-cover rounded-md"
+                />
+                <Image
+                  src="/images/xArm6.jpg"
+                  alt="Robotics system 2"
+                  width={300}
+                  height={200}
+                  className="object-cover rounded-md"
+                />
+                <Image
+                  src="/images/rosBridge1.png"
+                  alt="Robotics system 2"
+                  width={300}
+                  height={300}
+                  className="object-cover rounded-md"
+                />
+                 <Image
+                  src="/images/rViz.jpg"
+                  alt="Robotics system 2"
+                  width={300}
+                  height={300}
+                  className="object-cover rounded-md"
+                />
+              </div>  
             </div>
 
             {/* Add other projects here */}
@@ -113,10 +145,10 @@ export default function Home() {
       
       {/* Footer */}
       <footer className="text-center text-gray-400 py-6 border-t border-gray-700">
-        Built by Alex Torres |{" "}
+        Built by Alejandro Torres |{" "}
         <a href="https://github.com/Ale-Torres" className="hover:text-white">GitHub</a>{" "}
         |{" "}
-        <a href="https://www.linkedin.com/in/your-linkedin" className="hover:text-white">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/alejandrotmartn" className="hover:text-white">LinkedIn</a>
       </footer>
 
     </main>
