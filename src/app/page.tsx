@@ -59,10 +59,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About Section + Education */}
       <section
         id="about"
-        className="mx-auto max-w-3xl px-6 py-24"
+        className="mx-auto max-w-3xl px-6 py-24 flex flex-col items-center"
       >
         <h2 className="text-3xl text-center font-bold">
           About Me
@@ -73,7 +73,7 @@ export default function Home() {
         </p>
 
         {/* Image */}
-        <div className="mt-6 md:flex-1 flex justify-center">
+        <div className="mt-6 flex justify-center">
           <Image
             src="/images/me.jpg"
             alt="Alejandro Torres"
@@ -82,63 +82,126 @@ export default function Home() {
             className="shadow-lg"
           />
         </div>
+
+        {/* Education */}
+        <div className="mt-8 bg-gray-800 rounded-lg p-6 border border-gray-700 w-full max-w-3xl text-center">
+          <h3 className="text-xl font-semibold">
+            Bachelor of Software Engineering (BSEng)
+          </h3>
+
+          <p className="mt-2 text-gray-300">
+            University of Victoria (UVic), Victoria, British Columbia
+          </p>
+
+          <p className="mt-1 text-gray-400">
+            Graduation: November 2023
+          </p>
+
+          <p className="mt-3 text-gray-300">
+            Specialization: Data Mining, Machine Learning, and Artificial Intelligence
+          </p>
+        </div>
+
+        {/* Hobbies / Interests */}
+        <div className="mt-6 bg-gray-800 rounded-lg p-6 border border-gray-700 w-full max-w-3xl text-center">
+          <h3 className="text-xl font-semibold mb-2">Hobbies & Interests</h3>
+          <p className="text-gray-300">
+            Current soccer and baseball player.  
+            I enjoy watching every MLB baseball game I can, and I am very 
+            passionate about studying baseball analytics.
+          </p>
+        </div>
+
       </section>
 
+
+      
       {/* Projects Section */}
-      <section
-        id="projects"
-        className="bg-gray-900 py-24"
-      >
+      <section id="projects" className="bg-gray-900 py-24">
         <div className="mx-auto max-w-5xl px-6">
           <h2 className="text-3xl font-bold text-center text-white">
             Projects
           </h2>
 
-          <div className="mt-12 grid gap-8 justify-center">
-            {/* Example Project Card */}
-            <div className="rounded-lg border bg-gray-800 p-6 w-full max-w-md">
+          {/* Grid containing all project cards */}
+          <div className="mt-12 flex flex-col gap-8">
+            
+            {/* Robotics Project */}
+            <div className="rounded-lg border bg-gray-800 p-6 w-full max-w-3xl mx-auto">
               <h3 className="text-xl font-semibold text-white">
                 Robotics Control System
               </h3>
               <p className="mt-2 text-gray-300">
                 ROS-based robotic arm control and simulation using my Docker file and C++ scripts. 
-                Controlling with Keyboard, Unity and RVIz.
+                In the following images are the views of using the dockerized plug-and-play to allow: 
+                controlling with Keyboard, controlling with Unity and simulating with RViz.
               </p>
-
-              {/* Images */}
               <div className="mt-4 grid grid-cols-2 gap-3">
-                <Image
-                  src="/images/meXarm.jpg"
-                  alt="Robotics system 1"
-                  width={300}
-                  height={200}
-                  className="object-cover rounded-md"
-                />
-                <Image
-                  src="/images/xArm6.jpg"
-                  alt="Robotics system 2"
-                  width={300}
-                  height={200}
-                  className="object-cover rounded-md"
-                />
-                <Image
-                  src="/images/rosBridge1.png"
-                  alt="Robotics system 2"
-                  width={300}
-                  height={300}
-                  className="object-cover rounded-md"
-                />
-                 <Image
-                  src="/images/rViz.jpg"
-                  alt="Robotics system 2"
-                  width={300}
-                  height={300}
-                  className="object-cover rounded-md"
-                />
-              </div>  
+                <Image src="/images/meXarm.jpg" alt="Robotics system 1" width={300} height={200} className="object-cover rounded-md"/>
+                <Image src="/images/xArm6.jpg" alt="Robotics system 2" width={300} height={200} className="object-cover rounded-md"/>
+                <Image src="/images/rosBridge1.png" alt="Robotics system 3" width={300} height={300} className="object-cover rounded-md"/>
+                <Image src="/images/RViz.jpg" alt="Robotics system 4" width={300} height={300} className="object-cover rounded-md"/>
+              </div>
+              <div className="mt-4">
+                <a href="https://github.com/Ale-Torres/xarm-galactic-dev" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">
+                  View on GitHub →
+                </a>
+              </div>
             </div>
 
-            {/* Add other projects here */}
+            {/* University Scheduler */}
+            <div className="rounded-lg border bg-gray-800 p-6 w-full max-w-3xl mx-auto">
+              <h3 className="text-xl font-semibold text-white">
+                University Course Scheduling System
+              </h3>
+              <p className="mt-2 text-gray-300">
+                My UVic Software Engineering capstone project. Here are the screenshots of the UI that
+                I developed as I was an active developer on the front-end team. As I was scrum master
+                for the project, I oversaw development from the front-end, back-end and 
+                Algorithm teams to help create a University Scheduler to assign professors
+                to classes at times in classrooms.
+              </p>
+              <ul className="mt-3 text-gray-400 text-sm list-disc list-inside space-y-1">
+                <li>Role-based views: Professor & Admin dashboards</li>
+                <li>Preference-driven scheduling logic</li>
+                <li>Collaborated across frontend, backend, and algorithm teams</li>
+                <li>Designed UI for schedules and course management</li>
+              </ul>
+              {/* Screenshots */}
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <Image src="/images/scheduler/AdminLogin.png" alt="Admin dashboard view" width={800} height={500} className="rounded-lg border border-gray-700"/>
+                <Image src="/images/scheduler/AllAvailable.png" alt="Admin schedule view" width={800} height={500} className="rounded-lg border border-gray-700"/>
+                <Image src="/images/scheduler/ProfAssigned.png" alt="Admin filtering view" width={800} height={500} className="rounded-lg border border-gray-700"/>
+                <Image src="/images/scheduler/ScheduleView.png" alt="Admin course assignment view" width={800} height={500} className="rounded-lg border border-gray-700"/>
+                <Image src="/images/scheduler/ProfLogin.png" alt="Professor preferences view" width={800} height={500} className="rounded-lg border border-gray-700"/>
+                <Image src="/images/scheduler/ProfPref.png" alt="Professor schedule view" width={800} height={500} className="rounded-lg border border-gray-700"/>
+              </div>
+              {/* GitHub Link */}
+              <div className="mt-5">
+                <a href="https://github.com/Ale-Torres/Ale-frontend" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">
+                  View Frontend Code on GitHub →
+                </a>
+              </div>
+            </div>
+
+
+            {/* Fantasy Baseball Draft Engine */}
+            <div className="rounded-lg border bg-gray-800 p-6 w-full max-w-3xl mx-auto">
+              <h3 className="text-xl font-semibold text-white">
+                Fantasy Baseball Draft Engine <span className="text-sm text-yellow-400">(In Progress)</span>
+              </h3>
+              <p className="mt-2 text-gray-300">
+                My custom fantasy baseball draft tool designed to analyze player data
+                to optimize fantasy baseball draft strategies. The project will simulate draft scenarios using algorithms
+                and statistical models.
+              </p>
+              <div className="mt-4">
+                <a href="https://github.com/Ale-Torres/alerank-mlb" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">
+                  View on GitHub →
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
