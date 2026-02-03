@@ -68,7 +68,7 @@ export default function Home() {
           About Me
         </h2>
 
-        <p className="mt-6 text-lg text-gray-600 text-center leading-relaxed">
+        <p className="mt-6 text-lg text-white-400 text-center leading-relaxed">
           My shoulder cat Kaiser is always ready to program with me. 
         </p>
 
@@ -107,8 +107,8 @@ export default function Home() {
           <h3 className="text-xl font-semibold mb-2">Hobbies & Interests</h3>
           <p className="text-gray-300">
             Current soccer and baseball player.  
-            I enjoy watching every MLB baseball game I can, and I am very 
-            passionate about studying baseball analytics.
+            Baseball is my favorite sport to watch, and I am very passionate about 
+            studying baseball analytics.
           </p>
         </div>
 
@@ -140,7 +140,7 @@ export default function Home() {
                 <Image src="/images/meXarm.jpg" alt="Robotics system 1" width={300} height={200} className="object-cover rounded-md"/>
                 <Image src="/images/xArm6.jpg" alt="Robotics system 2" width={300} height={200} className="object-cover rounded-md"/>
                 <Image src="/images/rosBridge1.png" alt="Robotics system 3" width={300} height={300} className="object-cover rounded-md"/>
-                <Image src="/images/RViz.jpg" alt="Robotics system 4" width={300} height={300} className="object-cover rounded-md"/>
+                <Image src="/images/rViz.jpg" alt="Robotics system 4" width={300} height={300} className="object-cover rounded-md"/>
               </div>
               <div className="mt-4">
                 <a href="https://github.com/Ale-Torres/xarm-galactic-dev" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">
