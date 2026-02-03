@@ -132,10 +132,15 @@ export default function Home() {
                 Robotics Control System
               </h3>
               <p className="mt-2 text-gray-300">
-                ROS-based robotic arm control and simulation using my Docker file and C++ scripts. 
-                In the following images are the views of using the dockerized plug-and-play to allow: 
-                controlling with Keyboard, controlling with Unity and simulating with RViz.
+                A ROS 2–based robotic arm control and simulation system built in a Dockerized environment. 
+                I developed a plug-and-play workflow that enables controlling the xArm robot through multiple interfaces, 
+                including keyboard input, Unity, and RViz visualization.
               </p>
+              <ul className="mt-3 text-gray-400 text-sm list-disc list-inside space-y-1">
+              <li>Built a Docker-based ROS 2 environment (Galactic) to enable interactive robotic control and simulation</li>              <li>Integrated xArm6 robotic arm with ROS 2 for real-time control and simulation</li>
+              <li>Enabled multiple control modes: keyboard teleoperation, Unity-based control, and RViz visualization</li>
+              <li>Configured X11 display forwarding to visualize Gazebo and RViz from Docker on Windows</li>
+            </ul>
               <div className="mt-4 grid grid-cols-2 gap-3">
                 <Image src="/images/meXarm.jpg" alt="Robotics system 1" width={300} height={200} className="object-cover rounded-md"/>
                 <Image src="/images/xArm6.jpg" alt="Robotics system 2" width={300} height={200} className="object-cover rounded-md"/>
@@ -155,17 +160,18 @@ export default function Home() {
                 University Course Scheduling System
               </h3>
               <p className="mt-2 text-gray-300">
-                My UVic Software Engineering capstone project. Here are the screenshots of the UI that
-                I developed as I was an active developer on the front-end team. As I was scrum master
-                for the project, I oversaw development from the front-end, back-end and 
-                Algorithm teams to help create a University Scheduler to assign professors
-                to classes at times in classrooms.
+              My UVic Software Engineering capstone project: a university course scheduling system designed to assign professors 
+              to courses, time slots, and classrooms based on constraints and preferences. 
+              I was an active front-end developer responsible for designing and implementing the user interface, 
+              and served as Scrum Master, coordinating collaboration across front-end, back-end, and algorithm teams. 
+              The system leverages time-series forecasting using Seasonal Autoregressive Integrated Moving Average (SARIMA) 
+              to model and predict scheduling patterns.
               </p>
               <ul className="mt-3 text-gray-400 text-sm list-disc list-inside space-y-1">
-                <li>Role-based views: Professor & Admin dashboards</li>
-                <li>Preference-driven scheduling logic</li>
-                <li>Collaborated across frontend, backend, and algorithm teams</li>
-                <li>Designed UI for schedules and course management</li>
+                <li>Role-based interfaces for Professors and Administrators</li>
+                <li>Cross-team collaboration between frontend, backend, and algorithm development</li>
+                <li>Git-based workflow including branching, merging, integration, and smoke testing</li>
+                <li>Designed and developed the UI including the landing page, interactive schedule, and navigation components</li>
               </ul>
               {/* Screenshots */}
               <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -191,10 +197,18 @@ export default function Home() {
                 Fantasy Baseball Draft Engine <span className="text-sm text-yellow-400">(In Progress)</span>
               </h3>
               <p className="mt-2 text-gray-300">
-                My custom fantasy baseball draft tool designed to analyze player data
-                to optimize fantasy baseball draft strategies. The project will simulate draft scenarios using algorithms
-                and statistical models.
+                A custom fantasy baseball draft engine built to analyze player performance data and 
+                optimize draft strategies using data driven models. The system simulates draft scenarios 
+                to evaluate draft time decision-making outcomes and provide strategic recommendations.
               </p>
+              <ul className="mt-3 text-gray-400 text-sm list-disc list-inside space-y-1">
+              <li>Analyzes historical player statistics and performance trends</li>
+              <li>Simulates draft scenarios using algorithmic ranking and probability models</li>
+              <li>Implements custom scoring metrics to evaluate draft value and risk</li>
+              <li>Planned: Machine learning models to predict player performance</li>
+              <li>Planned: Interactive UI to visualize draft outcomes and strategy comparisons</li>
+              <li>Planned: Support for multiple league formats and scoring systems</li>
+            </ul>
               <div className="mt-4">
                 <a href="https://github.com/Ale-Torres/alerank-mlb" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">
                   View on GitHub →
