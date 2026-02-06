@@ -17,7 +17,6 @@ export default function Home() {
           <div className="flex items-center gap-8 font-medium">
             <a href="#hero" className="text-gray-200 hover:text-white transition-colors">Home</a>
             <a href="#about" className="text-gray-200 hover:text-white transition-colors">About</a>
-            <a href="#journey" className="text-gray-200 hover:text-white transition-colors">Journey</a>
             <a href="#projects" className="text-gray-200 hover:text-white transition-colors">Projects</a>
           </div>
         </div>
@@ -42,12 +41,6 @@ export default function Home() {
             About Me
           </a>
           
-          <a 
-            href="#journey" 
-            className="rounded-lg border border-gray-300 px-6 py-3 hover:bg-gray-100 transition">
-            My Journey
-          </a>
-
           <a
             href="#projects"
             className="rounded-lg border border-gray-300 px-6 py-3 hover:bg-gray-100 transition"
@@ -123,8 +116,9 @@ export default function Home() {
 
       </section>
 
+
       {/* ===== Engineering Journey Section ===== */}
-      <section id="journey" className="bg-gray-900 py-24">
+      <section id="journey" className="hidden md:block bg-gray-900 py-24">
         <div className="mx-auto max-w-5xl px-6">
 
           <h2 className="text-3xl font-bold text-center text-white">
