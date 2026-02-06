@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 
+
 export default function Home() {
   return (
     <main className="bg-gray-900 text-white min-h-screen">
@@ -16,6 +17,7 @@ export default function Home() {
           <div className="flex items-center gap-8 font-medium">
             <a href="#hero" className="text-gray-200 hover:text-white transition-colors">Home</a>
             <a href="#about" className="text-gray-200 hover:text-white transition-colors">About</a>
+            <a href="#journey" className="text-gray-200 hover:text-white transition-colors">Journey</a>
             <a href="#projects" className="text-gray-200 hover:text-white transition-colors">Projects</a>
           </div>
         </div>
@@ -34,18 +36,25 @@ export default function Home() {
 
         <div className="mt-8 flex gap-4">
           <a
+            href="#about"
+            className="rounded-lg border border-gray-300 px-6 py-3 hover:bg-gray-100 transition"
+          >
+            About Me
+          </a>
+          
+          <a 
+            href="#journey" 
+            className="rounded-lg border border-gray-300 px-6 py-3 hover:bg-gray-100 transition">
+            My Journey
+          </a>
+
+          <a
             href="#projects"
             className="rounded-lg border border-gray-300 px-6 py-3 hover:bg-gray-100 transition"
           >
             View Projects
           </a>
 
-          <a
-            href="#about"
-            className="rounded-lg border border-gray-300 px-6 py-3 hover:bg-gray-100 transition"
-          >
-            About Me
-          </a>
         </div>
 
         {/* Social links */}
@@ -112,6 +121,148 @@ export default function Home() {
           </p>
         </div>
 
+      </section>
+
+      {/* ===== Engineering Journey Section ===== */}
+      <section id="journey" className="bg-gray-900 py-24">
+        <div className="mx-auto max-w-5xl px-6">
+
+          <h2 className="text-3xl font-bold text-center text-white">
+            My Software Engineering Journey
+          </h2>
+
+          <div className="relative mt-20">
+
+            {/* Vertical Line */}
+            <div className="absolute left-1/2 top-0 h-full w-px bg-gray-700"></div>
+
+            {/* ===== 2017 - Start UVic ===== */}
+            <div className="relative w-full flex justify-start mb-20">
+              <div className="absolute left-1/2 -translate-x-1/2 bg-gray-900 px-3 text-sm text-gray-400">
+                2017
+              </div>
+
+              <div className="w-1/2 pr-12 text-right">
+                <div className="rounded-lg border bg-gray-800 p-6 inline-block max-w-md">
+                  <h3 className="text-xl font-semibold text-white">
+                    Bachelor of Software Engineering — University of Victoria
+                  </h3>
+                  <ul className="mt-3 text-gray-300 text-sm space-y-1">
+                    <li>• Started formal training in software engineering, algorithms, and system design </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="w-1/2"></div>
+            </div>
+
+            {/* ===== 2018 - Western Digital ===== */}
+            <div className="relative w-full flex justify-end mb-20">
+              <div className="absolute left-1/2 -translate-x-1/2 bg-gray-900 px-3 text-sm text-gray-400">
+                2018
+              </div>
+
+              <div className="w-1/2"></div>
+
+              <div className="w-1/2 pl-12 text-left">
+                <div className="rounded-lg border bg-gray-800 p-6 inline-block max-w-md">
+                  <h3 className="text-xl font-semibold text-white">
+                    Product Design Engineer — Western Digital
+                  </h3>
+                  <ul className="mt-3 text-gray-300 text-sm space-y-1">
+                    <li>• Built machine learning models to predict hard drive failures</li>
+                    <li>• Analyzed large-scale datasets using SQL and statistical tools</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* ===== 2020 - Scotiabank (Analyst) ===== */}
+            <div className="relative w-full flex justify-start mb-20">
+              <div className="absolute left-1/2 -translate-x-1/2 bg-gray-900 px-3 text-sm text-gray-400">
+                2020
+              </div>
+
+              <div className="w-1/2 pr-12 text-right">
+                <div className="rounded-lg border bg-gray-800 p-6 inline-block max-w-md">
+                  <h3 className="text-xl font-semibold text-white">
+                    Technical Business Analyst — Scotiabank
+                  </h3>
+                  <ul className="mt-3 text-gray-300 text-sm space-y-1">
+                    <li>• Developed automation tools to streamline workflows</li>
+                    <li>• Designed interactive visual system to map bank technologies</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="w-1/2"></div>
+            </div>
+
+            {/* ===== 2021 - Scotiabank (DevOps) ===== */}
+            <div className="relative w-full flex justify-end mb-20">
+              <div className="absolute left-1/2 -translate-x-1/2 bg-gray-900 px-3 text-sm text-gray-400">
+                2021
+              </div>
+
+              <div className="w-1/2"></div>
+
+              <div className="w-1/2 pl-12 text-left">
+                <div className="rounded-lg border bg-gray-800 p-6 inline-block max-w-md">
+                  <h3 className="text-xl font-semibold text-white">
+                    DevOps Engineer — Scotiabank
+                  </h3>
+                  <ul className="mt-3 text-gray-300 text-sm space-y-1">
+                    <li>• Built Docker-based development environments for distributed teams</li>
+                    <li>• Supported CI/CD pipelines and managed deployment workflows</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* ===== 2024 - Graduation ===== */}
+            <div className="relative w-full flex justify-start mb-20">
+              <div className="absolute left-1/2 -translate-x-1/2 bg-gray-900 px-3 text-sm text-gray-400">
+                2023
+              </div>
+
+              <div className="w-1/2 pr-12 text-right">
+                <div className="rounded-lg border bg-gray-800 p-6 inline-block max-w-md">
+                  <h3 className="text-xl font-semibold text-white">
+                    Bachelor of Software Engineering — Graduation
+                  </h3>
+                  <ul className="mt-3 text-gray-300 text-sm space-y-1">
+                    <li>• Led capstone project as Scrum Master</li>
+                    <li>• Focused on Software System Scalability, Software Testing, Artificial Intelligence, and Software Architecture</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="w-1/2"></div>
+            </div>
+
+            {/* ===== 2024–Present - UVic ===== */}
+            <div className="relative w-full flex justify-end">
+              <div className="absolute left-1/2 -translate-x-1/2 bg-gray-900 px-3 text-sm text-gray-400">
+                2024
+              </div>
+
+              <div className="w-1/2"></div>
+
+              <div className="w-1/2 pl-12 text-left">
+                <div className="rounded-lg border bg-gray-800 p-6 inline-block max-w-md">
+                  <h3 className="text-xl font-semibold text-white">
+                    Engineering Recruitment Officer — University of Victoria
+                  </h3>
+                  <ul className="mt-3 text-gray-300 text-sm space-y-1">
+                    <li>• Travel to present UVic engineering programs and technical initiatives across North America</li>
+                    <li>• Bridged technical concepts with students, faculty, and industry partners</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </section>
 
 
@@ -185,7 +336,7 @@ export default function Home() {
               {/* GitHub Link */}
               <div className="mt-5">
                 <a href="https://github.com/Ale-Torres/Ale-frontend" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">
-                  View Frontend Code on GitHub →
+                  View on GitHub →
                 </a>
               </div>
             </div>
